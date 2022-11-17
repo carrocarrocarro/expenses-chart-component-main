@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+<body>
+  <div class="site-wrapper">
+    <main>
+      <header class="balance-header">
+        <div class="balance-info">
+          <p>My balance</p>
+          <p class="balance">$<span id="total-amount">921.48</p>
+        </div>
+        <img src="./src/images/logo.svg" class="logotype" alt="Logotype">
+      </header>
+      <section class="balance-section">
+        <h1>Spending - Last 7 days</h1>
+        <div class="chart" id="chart">
+        </div>
+        <hr />
+        <div class="balance-info">
+          <div class="balance-info--left">
+            <p>Total this month</p>
+            <p class="balance">$<span id="total-amount">478.33</p>
+          </div>
+          <div class="balance-info--right">
+            <p id="change">
+              <span id="change--direction">+</span>
+              <span id="change--number">2.4</span>
+              <span id="change--type">%</span>
+            </p>
+            <p>from last month</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/carrocarrocarro">Caroline Englund</a>.
+    </footer>
+  </div>
+  <script type="module" src="src/script/index.js"></script>
+</body>
+</html>
