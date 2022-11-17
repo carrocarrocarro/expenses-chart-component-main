@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/carrocarrocarro/expenses-chart-component-main)
-- Live Site URL: [](https://637632b7f5d842081503b936--delicate-sprinkles-c91079.netlify.app/)
+- Solution URL: https://github.com/carrocarrocarro/expenses-chart-component-main
+- Live Site URL: https://637632b7f5d842081503b936--delicate-sprinkles-c91079.netlify.app
 
 ## My process
 
