@@ -16,19 +16,7 @@ data.forEach(e => {
 })
 
 //Logs the expense data in the array
-console.log(expenseData)
-
-// New empty array for the weekly days
-const days = []
-// Saves the weekly days into a new array
-data.forEach(e => {
-    // Saves days to new array
-    days.push(e.day)
-            
-})
-
-// Logs the expense data
-console.log(days)
+//console.log(expenseData)
 
 // Empty varible for the maxAmout
 let maxAmount;
@@ -36,21 +24,25 @@ let maxAmount;
 //Get the maxAmount from the expenseData and saves it to the maxAmount
 maxAmount= Math.max.apply(null, expenseData)
 //Logs the maxAmount 
-console.log(maxAmount)
+//console.log(maxAmount)
 
+// Variable for the height of the chart
 let chartHeightPx
+// Variable for the height of the staple
 let chartItemHeight
 
+// Sets the height of the chart to 200 (px)
 chartHeightPx = 200
-//chartItemHeight = (maxAmount/chartHeightPx) * 100
-//console.log(chartItemHeight)
 
-
+//Loop thorugh the expense data
 data.forEach(item => {
 
+    // Sets the height of the staple depending oo the value
     chartItemHeight = ((item.amount/chartHeightPx) * 100)*5
-    console.log(chartItemHeight)
+    
+    //console.log(chartItemHeight)
 
+    // Outputs the chart
     chart.innerHTML += ` 
         <div 
             class="chart-item" style="height:${chartHeightPx}px"
@@ -71,36 +63,5 @@ data.forEach(item => {
             
         </div>
         `
-
 })
-
-
-/* const chartItems = document.querySelectorAll(".chart-item--staple")
-console.log(chartItems)
-const amountItems = document.querySelectorAll(".amount")
-
-
-let count = 0;
-
-chartItems.forEach(chartItem => {
-
-    chartItem.addEventListener("mouseover",() => {
-        console.log(chartItem[count])
-    })
-})
- */
-
-/* function createChart() {
-    // Outputting the chart
-    
-
-} */
-
-// Saves the max number in the array into a new variable
-//maxNumber = Math.max.apply(null, expenseData)
-//console.log(maxNumber)
-
-//console.log(expenseData)
-//console.log(maxNumber)
-/* ${maxNumber === e.amount ? "max" : ""} */
 
